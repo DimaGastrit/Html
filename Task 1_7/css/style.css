@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+/*font-family: 'Lobster Two', cursive;*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  font-family: 'Lobster Two', cursive;
+  height: 100%;
+  background-color: #6FAA43;
+}
+
+.slider {
+  position: relative;
+  width: 1100px;
+  height: 600px;
+  overflow: hidden;
+  border: 8px solid #FFD100;
+  outline: solid 8px #0082D1;
+}
+
+.middle {
+  margin: 5% auto 0 auto;
+}
+
+.slides {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 500%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.slides input[name="r"], .slides input[name="a"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+.slide {
+  color: white;
+  text-align: center;
+  width: 20%;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.slide__title {
+  margin-top: 25%;
+  font-size: 45px;
+}
+
+.slide__text {
+  font-size: 25px;
+}
+
+.slide__1 {
+  background: url("../img/1.jpeg") 0 0/cover no-repeat;
+}
+
+.slide__2 {
+  background: url("../img/2.jpeg") 0 0/cover no-repeat;
+}
+
+.slide__3 {
+  background: url("../img/3.jpeg") 0 0/cover no-repeat;
+}
+
+.slide__4 {
+  background: url("../img/4.jpeg") 0 0/cover no-repeat;
+}
+
+.slide__5 {
+  background: url("../img/5.jpeg") 0 0/cover no-repeat;
+}
+
+.navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 540px;
+  left: 430px;
+}
+
+.bar {
+  margin: 5px;
+  height: 8px;
+  width: 45px;
+  cursor: pointer;
+  background-color: #FFD100;
+  opacity: .5;
+  border-radius: 10px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.bar:hover {
+  opacity: .8;
+}
+
+#ar0:checked ~ div.navigator > :first-child,
+#arL2:checked ~ div.navigator > :first-child {
+  background-color: #0082D1;
+  opacity: 1;
+}
+
+#ar0:checked ~ .slide,
+#arL2:checked ~ .slide {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+#ar0:checked ~ div.arrow__main > :not(:first-child),
+#arL2:checked ~ div.arrow__main > :not(:first-child) {
+  visibility: hidden;
+}
+
+#arR1:checked ~ div.navigator > :nth-child(2),
+#arL3:checked ~ div.navigator > :nth-child(2) {
+  background-color: #0082D1;
+  opacity: 1;
+}
+
+#arR1:checked ~ .slide,
+#arL3:checked ~ .slide {
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+}
+
+#arR1:checked ~ div.arrow__main > :not(:nth-child(3)):not(:nth-child(2)),
+#arL3:checked ~ div.arrow__main > :not(:nth-child(3)):not(:nth-child(2)) {
+  visibility: hidden;
+}
+
+#arR2:checked ~ div.navigator > :nth-child(3),
+#arL4:checked ~ div.navigator > :nth-child(3) {
+  background-color: #0082D1;
+  opacity: 1;
+}
+
+#arR2:checked ~ .slide,
+#arL4:checked ~ .slide {
+  -webkit-transform: translate(-200%);
+          transform: translate(-200%);
+}
+
+#arR2:checked ~ div.arrow__main > :not(:nth-child(4)):not(:nth-child(5)),
+#arL4:checked ~ div.arrow__main > :not(:nth-child(4)):not(:nth-child(5)) {
+  visibility: hidden;
+}
+
+#arR3:checked ~ div.navigator > :nth-child(4),
+#arL5:checked ~ div.navigator > :nth-child(4) {
+  background-color: #0082D1;
+  opacity: 1;
+}
+
+#arR3:checked ~ .slide,
+#arL5:checked ~ .slide {
+  -webkit-transform: translate(-300%);
+          transform: translate(-300%);
+}
+
+#arR3:checked ~ div.arrow__main > :not(:nth-child(6)):not(:nth-child(7)),
+#arL5:checked ~ div.arrow__main > :not(:nth-child(6)):not(:nth-child(7)) {
+  visibility: hidden;
+}
+
+#arR4:checked ~ div.navigator > :nth-child(5) {
+  background-color: #0082D1;
+  opacity: 1;
+}
+
+#arR4:checked ~ .slide {
+  -webkit-transform: translate(-400%);
+          transform: translate(-400%);
+}
+
+#arR4:checked ~ div.arrow__main > :not(:nth-child(8)) {
+  visibility: hidden;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.7;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 45px;
+  line-height: 39px;
+  font-weight: bold;
+  top: 27%;
+  color: #FFD100;
+  top: 300px;
+}
+
+.arrow__left::before {
+  content: "❰";
+}
+
+.arrow__right {
+  left: 96%;
+}
+
+.arrow__right::after {
+  content: "❱";
+}
+/*# sourceMappingURL=style.css.map */
