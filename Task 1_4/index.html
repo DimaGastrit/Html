@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>PacMen</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="contaner">
+			<div class="pacman ">
+			</div>
+			<div class="food ">
+				<div class="food__row ">
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+					<div class="food__item "></div>
+				</div>
+			</div>
+		</div>
+		<button class="buttom">
+			<h3 class="buttom__text">Feed me</h3>
+		</button>
+	</div>
+	<script>
+		document.querySelector('.buttom').addEventListener('click', () => {
+			document.querySelector('.food__row').classList.toggle('animation');
+		});
+	</script>
+</body>
+
+</html>

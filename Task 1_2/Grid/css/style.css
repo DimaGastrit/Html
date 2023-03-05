@@ -1,0 +1,93 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+nav,footer,header,aside{display: grid;}
+html,body{
+	height: 100%;
+	width: 100%;	
+	font-family: 'Lato', sans-serif; 
+}
+/*--------------------*/
+
+.wrapper {
+	min-height: 100%;	
+	display: grid;	
+	grid-template-columns: 15% auto 15%;
+   grid-template-rows: 8% auto 8%;
+	grid-template-areas:
+	"header  header  header " " nav  main aside" "footer footer footer ";
+	justify-content: center;
+}
+.header {		
+	text-align: center;
+	height: 100%;	
+	background-color: #336697;
+	grid-area: header;
+	font-size: 25px;
+	
+}
+.header__title{
+	padding: 20px;
+}
+.nav {
+	height: 100%;	
+	background-color: #fe9900;
+	font-size: 20px;
+	grid-area:nav;
+
+}
+.nav__title{
+	padding: 20px;
+}
+.main {	
+	height: 100%;
+	grid-area:main;
+	
+}
+.main__title {
+	padding: 15px;
+	font-size: 25px;
+}
+.main__text {
+	padding: 15px;
+	font-size: 20px;
+}
+.aside {
+	height: 100%;	
+	font-size: 20px;
+	grid-area:aside;
+	background-color: #993366
+}
+.aside__title{
+	padding: 20px;
+}
+.footer {
+	text-align: center;
+	height: 100%;		
+	font-size: 25px;
+	grid-area:footer;
+	background-color: #669900
+}
+.footer__title{
+	padding: 20px;
+}
+@media(max-width:1010px){
+	.wrapper {
+		display: grid;	
+		grid-template-columns: auto ;
+		grid-template-rows: 9% 9% auto 9% 9%;
+		grid-template-areas:
+		"header"
+		 "nav" 
+		 "main"
+		 "aside"
+		 "footer"
+		 ;
+		justify-content: center;	
+	}	
+}

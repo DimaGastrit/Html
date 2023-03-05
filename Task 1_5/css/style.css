@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+/*font-family: 'Lobster Two', cursive;*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  font-family: 'Lobster Two', cursive;
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 70px;
+  padding-top: 25%;
+  color: #2a2ca3;
+}
+
+.winter {
+  z-index: 1;
+  height: 100%;
+  background: url(../img/Winter.jpg) 0 75%/cover no-repeat fixed;
+}
+
+.winter h3 {
+  color: #4547ce;
+}
+
+.spring {
+  -webkit-box-shadow: 0px -20px 12px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px -20px 12px 0px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  background: url(../img/Spring.jpg) 0 0/cover no-repeat;
+}
+
+.spring h3 {
+  color: #30bb5e;
+}
+
+.summer {
+  height: 100%;
+  background: url(../img/Summer.jpg) 0 0/cover no-repeat fixed;
+}
+
+.summer h3 {
+  color: #ddd237;
+}
+
+.autumn {
+  height: 100%;
+  background: url(../img/Autumna.jpg) top/cover no-repeat fixed;
+}
+
+.autumn h3 {
+  color: #d69637;
+}
+/*# sourceMappingURL=style.css.map */

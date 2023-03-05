@@ -1,0 +1,107 @@
+/*____Fonts_____*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+/*font-family: 'Roboto Condensed', sans-serif;*/
+/*____NullStyle_____*/
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+code {
+  background-color: #E0DCDD;
+}
+
+/*___________*/
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.aside {
+  width: 14%;
+  background-color: #ECEBEC;
+  border-right: 2px solid #9B9A9C;
+  position: fixed;
+}
+
+.aside__container {
+  height: 100%;
+}
+
+.nav :not(:last-child) {
+  border-bottom: 1px solid #E5E3E5;
+}
+
+.nav__container {
+  padding: 7px;
+}
+
+.nav__item {
+  list-style: none;
+  padding: 7px 0;
+}
+
+.nav__link {
+  color: black;
+  font-size: 15px;
+}
+
+.main {
+  margin-left: 15%;
+}
+
+.main__container {
+  height: 100%;
+  width: 83%;
+  padding: 7px;
+}
+
+.main__code {
+  margin-left: 15px;
+  display: block;
+  padding: 5px;
+  font-size: 17px;
+}
+
+.main__title {
+  margin-top: 25px;
+  padding-left: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.main__text {
+  padding: 10px 0 10px 15px;
+  font-size: 17px;
+}
+
+.main__subtitle {
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main__list {
+  padding: 10px 0 10px 35px;
+}
+
+.main__item {
+  padding: 4px 5px;
+  font-size: 17px;
+}
+/*# sourceMappingURL=style.css.map */

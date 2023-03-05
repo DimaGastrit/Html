@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Task 1_6</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<aside class="aside aside__container">
+			<nav class="nav nav__container">
+				<a class="nav__link" href="#displayProperty">
+					<h3 class="nav__title">CSS display Property</h3>
+				</a>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#inline" class="nav__link">Inline</a></li>
+					<li class="nav__item"><a href="#blok" class="nav__link">Block</a></li>
+					<li class="nav__item"><a href="#inline-block" class="nav__link">Inline-block</a></li>
+					<li class="nav__item"><a href="#flex" class="nav__link">Flex</a></li>
+					<li class="nav__item"><a href="#grid" class="nav__link">Grid</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="main main__container">
+			<article class="main__article">
+				<h4 class="main__title" id="displayProperty">Display property</h4>
+				<div class="main__text">The Display property in CSS defines how the components(div, hyperlink, heading, etc)
+					are going to be placed on the web page. As the name suggests, this property is used to define the display
+					of the different parts of a web page.
+					Syntax: </div>
+				<div class="main__subtitle">
+					Syntax:
+				</div> <br>
+				<code class="main__code">display: value;</code>
+			</article>
+			<article class="main__article">
+				<h4 class="main__title" id="inline">Inline</h4>
+				<div class="main__text">
+					An element with a display property set to inline will not start on a new line and it
+					will take up the remaining/available screen width. It just takes up the space such an element would
+					normally take.
+					Because of this, you can't set the width and height of an element that has a display of inline, becuase
+					it does not take up the whole screen width.
+					Some elements are inline by default, like &lt;span&gt;, &lt;a&gt;, &lt;i&gt;, and &lt;img&gt;. </div>
+				<div class="main__subtitle">
+					Syntax:
+				</div> <br>
+				<code class="main__code">display: inline;</code>
+			</article>
+			<article class="main__article">
+				<h4 class="main__title" id="blok">Block </h4>
+				<div class="main__text">
+					An element that has the display property set to block starts on a new line and takes up the available
+					screen width. You can specify the width and height properties for such elements. Examples of elements
+					that are at
+					block-level by default are &lt;div&gt;, &lt;section&gt;, &lt;p&gt;, and lots more.
+					You can set the span from the previous HTML code to block display and it will behave like a block-level
+					element. </div>
+			</article>
+			<article class="main__article">
+				<h4 class="main__title" id="inline-block">Inline-block</h4>
+				<div class="main__text">
+					<code>
+					</code> Compared to <code> display: inline</code>, the major difference is that
+					<code>display: inline-block</code> allows to set a width and
+					height on the element.
+					Also, with <code>display: inline-block</code> , the top and bottom margins/paddings are respected, but
+					with display:
+					inline they are not.
+					Compared to display: block, the major difference is that display: inline-block does not add a line-break
+					after the element, so the element can sit next to other elements.The following example shows the
+					different behavior of display: inline, display: inline-block and display: block:
+					<ul class="main__list">
+						<li class="main__item">Bla bla bla </li>
+						<li class="main__item">Bla bla bla </li>
+						<li class="main__item">Lore Loren loren</li>
+					</ul>
+					Apart from block and inline display,
+					there's also inline-block.
+					An element you assign a display of inline-block is inline by presentation.
+					But it has the added advantage of you being able to apply width and height to it,
+					which you can't do when the element is assigned a dispaly of inline.
+					So, you can look at the inline-block display as an inline element and block element in one package.
+				</div>
+			</article>
+			<article class="main__article">
+				<h4 class="main__title" id="flex">Flex</h4>
+				<div class="main__text">
+					Displays an element as a block-level flex container
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti neque tempore qui illo error aut
+					voluptatum aspernatur animi sit, excepturi rerum laudantium minus ea ullam esse! Totam et maiores
+					inventore.</div>
+				<h6 class="main__subtitle">Definition and Usage</h6>
+				<ul class="main__list">
+					<li class="main__item">Flex-grow</li>
+					<li class="main__item">Flex-shrink</li>
+					<li class="main__item">Flex-basis</li>
+				</ul>
+			</article>
+			<article class="main__article">
+				<h4 class="main__title" id="grid">Grid</h4>
+				<div class="main__text">
+					CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page
+					areas or small user interface elements. This article introduces the CSS Grid Layout and the new
+					terminology that is part of the CSS Grid Layout Level 1 specification. The features shown in this
+					overview will then be explained in greater detail in the rest of this guide.
+				</div>
+				<h6 class="main__subtitle">Definition and Usage</h6>
+				<ul class="main__list">
+					<li class="main__item">grid-template-rows</li>
+					<li class="main__item">grid-template-columns</li>
+					<li class="main__item">grid-template-areas</li>
+				</ul>
+				<div class="main__text">
+					Displays an element as a block-level grid container </div>
+			</article>
+		</main>
+	</div>
+</body>
+
+</html>
